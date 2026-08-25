@@ -78,13 +78,13 @@ app.post("/webhook/whatsapp", (req, res) => {
 });
 
 // Your existing logging service
-setInterval(() => {
-  const now = new Date().toISOString();
+// setInterval(() => {
+//   const now = new Date().toISOString();
 
-  for (let i = 0; i <= 5; i++) {
-    console.log(`[${now}] Log line ${i}`);
-  }
-}, 1000);
+//   for (let i = 0; i <= 5; i++) {
+//     console.log(`[${now}] Log line ${i}`);
+//   }
+// }, 1000);
 
 app.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
